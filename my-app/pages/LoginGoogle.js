@@ -32,7 +32,7 @@ export default function Login() {
         clearTimeout(timer);
       };
     }
-  }, [isLoggedIn]);
+  }, [isLoggedIn, router]);
 
   const handleSignInWithGoogle = async () => {
     const provider = new GoogleAuthProvider();

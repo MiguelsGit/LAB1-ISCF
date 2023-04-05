@@ -80,7 +80,7 @@ export default function GraphInterface({ interval }) {
         chartRefX.current.data.datasets[0].data = readData.x;
         chartRefX.current.update();
     }
-  }, [readData.x, canvasRefX, chartRefX]);
+  }, [readData.x, canvasRefX, chartRefX, readData.timestamp]);
   
   useEffect(() => {
     const ctxY = canvasRefY.current.getContext("2d");  
@@ -109,7 +109,7 @@ export default function GraphInterface({ interval }) {
       chartRefY.current.data.datasets[0].data = readData.y;
       chartRefY.current.update();
     }
-  }, [readData.y, canvasRefY, chartRefY]);
+  }, [readData.y, canvasRefY, chartRefY, readData.timestamp]);
   
   useEffect(() => {
     const ctxZ = canvasRefZ.current.getContext("2d");  
@@ -138,7 +138,7 @@ export default function GraphInterface({ interval }) {
       chartRefZ.current.data.datasets[0].data = readData.z;
       chartRefZ.current.update();
     }
-  }, [readData.z, canvasRefZ, chartRefZ]);
+  }, [readData.z, canvasRefZ, chartRefZ, readData.timestamp]);
   
   
   return (
