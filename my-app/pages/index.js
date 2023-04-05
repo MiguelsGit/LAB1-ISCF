@@ -3,7 +3,7 @@ import Link from 'next/link'; // Next.js component for client-side navigation
 import styles from '@/styles/Home.module.css'; // CSS styles for this component
 import { onAuthStateChanged } from 'firebase/auth'; // Firebase authentication listener
 import { useState, useEffect } from 'react'; // React hooks for managing component state
-import { logout } from '../pages/LogoutGoogle'; // Function for logging out of Google account
+import logout from '../pages/LogoutGoogle'; // Function for logging out of Google account
 import { authGoogle } from '@/config/firebaseConfig'; // Firebase authentication configuration
 
 function HomePage() {
